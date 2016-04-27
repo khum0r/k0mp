@@ -1,3 +1,4 @@
+All credits to electro7.
 
 ### Clean install (debian jessie):
 
