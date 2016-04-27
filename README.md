@@ -1,17 +1,3 @@
-# E7 dotfiles
-Config files for a minimalist X desktop; i3wm & lemonbar, rxvt, bitlbee & weechat, vim, git, cnmpcpp...
-
-### Last screenshot
-
-Change every day. Something like this:
-
-![last screenshot] (https://dl.dropboxusercontent.com/u/60065791/screenshots/2015-08-13.png)
-
-### I3 LemonBar
-
-![lemonbar full] (https://dl.dropboxusercontent.com/u/60065791/screenshots/lemonbar/i3bar_full.png)
-
-Config files and help [here] (https://github.com/electro7/dotfiles/tree/master/.i3/lemonbar)
 
 ### Clean install (debian jessie):
 
