@@ -54,5 +54,8 @@ exec /usr/lib/notification-daemon/notification-daemon &
 # Cambia el Wheel Left (6) por el Middle click (2)
 xinput set-button-map 10 1 2 3 4 5 2 7 8 9
 
+# Dual monitor
+xrandr --output DP1 --auto --output DP2 --right-of DP1
+
 # Gestor de ventanas
 exec i3

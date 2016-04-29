@@ -140,8 +140,8 @@ bindcode $mod+Mod4+111 split v
 bindcode $mod+41 fullscreen
 
 # change container layout (stacked (mod+s), tabbed (mod+t), default(mod+e))
-bindcode $mod+s layout stacking #39=s
-bindcode $mod+t layout tabbed #28=t
+bindcode $mod+39 layout stacking
+bindcode $mod+28 layout tabbed
 bindcode $mod+40 layout default
 bindcode $mod+25 layout toggle split
 
@@ -170,16 +170,16 @@ workspace 8 output DP2
 workspace 9 output DP2
 
 # switch to workspace
-bindcode $mod+10 workspace 1:term
-bindcode $mod+11 workspace 2:www
-bindcode $mod+12 workspace 3:vbox
-bindcode $mod+13 workspace 4:vnc
-bindcode $mod+14 workspace 5:doc
-bindcode $mod+15 workspace 6:img
-bindcode $mod+16 workspace 7:misc
-bindcode $mod+17 workspace 8
-bindcode $mod+18 workspace 9
-bindcode $mod+19 workspace 10
+bindcode $mod+10 workspace 1:one
+bindcode $mod+11 workspace 2:two
+bindcode $mod+12 workspace 3:three
+bindcode $mod+13 workspace 4:four
+bindcode $mod+14 workspace 5:five
+bindcode $mod+15 workspace 6:six
+bindcode $mod+16 workspace 7:seven
+bindcode $mod+17 workspace 8:eight
+bindcode $mod+18 workspace 9:nine
+bindcode $mod+19 workspace 10:ten
 
 # move focused container to workspace
 bindcode $mod+Shift+10 move container to workspace 1:one
