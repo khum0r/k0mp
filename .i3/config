@@ -83,9 +83,9 @@ bindcode $mod+53 exec dmenu_run -fn "$ft" -nb "$back" -nf "$white" -sb "$yellow"
 #bindcode XF86AudioNext exec ncmpcpp next
 
 #assign application to workspace
-assign [class="Iceweasel"] 2:www
-assign [class="(i)VirtualBox"] 3:vbox
-assign [instance="(?i)TeamViewer.exe"] 4:vnc
+assign [class="Iceweasel"] 3:three
+assign [class="(i)VirtualBox"] 9:nine
+#assign [instance="(?i)TeamViewer.exe"] 4:vnc
 #assign [class="Firefox"] → 2
 #assign [class="Google-chrome"] → 2
 #assign [class="vlc"] → 4
@@ -112,15 +112,19 @@ bindcode $mod+24 reload
 
 # Cursor key for focus
 bindcode $mod+113 focus left
+bindcode $mod+44  focus left
 bindcode $mod+116 focus down
 bindcode $mod+111 focus up
 bindcode $mod+114 focus right
+bindcode $mod+45  focus right
 
 # Shitf+cursor for move windows
 bindcode $mod+Shift+113 move left
+bindcode $mod+Shift+44  move left
 bindcode $mod+Shift+116 move down
 bindcode $mod+Shift+111 move up
 bindcode $mod+Shift+114 move right
+bindcode $mod+Shift+45  move right
 
 # split in horizontal orientation (mod+h)
 bindcode $mod+43 split h
@@ -136,8 +140,8 @@ bindcode $mod+Mod4+111 split v
 bindcode $mod+41 fullscreen
 
 # change container layout (stacked (mod+s), tabbed (mod+t), default(mod+e))
-bindcode $mod+39 layout stacking
-bindcode $mod+28 layout tabbed
+bindcode $mod+s layout stacking #39=s
+bindcode $mod+t layout tabbed #28=t
 bindcode $mod+40 layout default
 bindcode $mod+25 layout toggle split
 
@@ -154,6 +158,17 @@ bindcode $mod+38 focus parent
 # focus the child container (mod+z)
 bindcode $mod+52 focus child
 
+# workspace defined
+workspace 1 output DP1
+workspace 2 output DP1
+workspace 3 output DP1
+workspace 4 output DP1
+workspace 5 output DP1
+workspace 6 output DP1
+workspace 7 output DP2
+workspace 8 output DP2
+workspace 9 output DP2
+
 # switch to workspace
 bindcode $mod+10 workspace 1:term
 bindcode $mod+11 workspace 2:www
@@ -167,16 +182,16 @@ bindcode $mod+18 workspace 9
 bindcode $mod+19 workspace 10
 
 # move focused container to workspace
-bindcode $mod+Shift+10 move container to workspace 1:term
-bindcode $mod+Shift+11 move container to workspace 2:www
-bindcode $mod+Shift+12 move container to workspace 3:vbox
-bindcode $mod+Shift+13 move container to workspace 4:vnc
-bindcode $mod+Shift+14 move container to workspace 5:doc
-bindcode $mod+Shift+15 move container to workspace 6:img
-bindcode $mod+Shift+16 move container to workspace 7:misc
-bindcode $mod+Shift+17 move container to workspace 8
-bindcode $mod+Shift+18 move container to workspace 9
-bindcode $mod+Shift+19 move container to workspace 10
+bindcode $mod+Shift+10 move container to workspace 1:one
+bindcode $mod+Shift+11 move container to workspace 2:two
+bindcode $mod+Shift+12 move container to workspace 3:three
+bindcode $mod+Shift+13 move container to workspace 4:four
+bindcode $mod+Shift+14 move container to workspace 5:five
+bindcode $mod+Shift+15 move container to workspace 6:six
+bindcode $mod+Shift+16 move container to workspace 7:seven
+bindcode $mod+Shift+17 move container to workspace 8:eight
+bindcode $mod+Shift+18 move container to workspace 9:nine
+bindcode $mod+Shift+19 move container to workspace 10:ten
 
 # reload the configuration file (mod+shitf+c)
 bindcode $mod+Shift+54 kill
