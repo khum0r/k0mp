@@ -10,11 +10,11 @@
 #---------------------------------------------------------------------------
 
 # Mis datos
-set realname="Electro7"
-set hostname="Manzanita"
+set realname="khum0r"
+set hostname="kh0r-debian"
 unset use_from
 unmy_hdr From:
-send-hook . 'my_hdr From: Electro7 <agmviv@gmail.com>'
+send-hook . 'my_hdr From: khum0r <agmviv@gmail.com>'
 my_hdr Reply-To: agmviv@gmail.com
 my_hdr Organization: ViV
 my_hdr X-Editor: Vi Improved
