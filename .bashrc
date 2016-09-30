@@ -79,6 +79,7 @@ export LESS="-R"
 # PATH
 #----------------------------------------------------------------------#
 export PATH="$PATH:$HOME/bin"
+export PATH="$PATH:/opt/forticlient-sslvpn"
 
 #----------------------------------------------------------------------#
 # Variables variadas
